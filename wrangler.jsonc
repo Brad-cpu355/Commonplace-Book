@@ -1,16 +1,14 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "commonplace-book",
-  "main": "src/index.js",
-  "compatibility_date": "2026-01-01",
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS"
+  "compatibility_date": "2026-07-26",
+  "observability": {
+    "enabled": true
   },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "commonplace-book-db",
-      "database_id": "ae870aca-6969-4efe-a738-f00eacce9acf"
-    }
+  "assets": {
+    "directory": "."
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
   ]
 }
